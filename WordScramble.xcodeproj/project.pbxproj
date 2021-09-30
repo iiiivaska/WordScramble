@@ -12,6 +12,8 @@
 		A80707372704B6F5006C7541 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A80707362704B6F5006C7541 /* Assets.xcassets */; };
 		A807073A2704B6F5006C7541 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A80707392704B6F5006C7541 /* Preview Assets.xcassets */; };
 		A840CE862705B35300F31464 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = A840CE852705B35200F31464 /* start.txt */; };
+		A8FE540D2705F74E00B0D2BB /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = A8FE540C2705F74E00B0D2BB /* Readme.md */; };
+		A8FE54112705FAAE00B0D2BB /* intro.GIF in Resources */ = {isa = PBXBuildFile; fileRef = A8FE54102705FAAE00B0D2BB /* intro.GIF */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		A80707362704B6F5006C7541 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A80707392704B6F5006C7541 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A840CE852705B35200F31464 /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
+		A8FE540C2705F74E00B0D2BB /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
+		A8FE54102705FAAE00B0D2BB /* intro.GIF */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = intro.GIF; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,7 @@
 		A80707262704B6E9006C7541 = {
 			isa = PBXGroup;
 			children = (
+				A8FE540C2705F74E00B0D2BB /* Readme.md */,
 				A80707312704B6EA006C7541 /* WordScramble */,
 				A80707302704B6EA006C7541 /* Products */,
 			);
@@ -56,6 +61,7 @@
 				A80707322704B6EA006C7541 /* WordScrambleApp.swift */,
 				A80707342704B6EA006C7541 /* ContentView.swift */,
 				A840CE852705B35200F31464 /* start.txt */,
+				A8FE54102705FAAE00B0D2BB /* intro.GIF */,
 				A80707362704B6F5006C7541 /* Assets.xcassets */,
 				A80707382704B6F5006C7541 /* Preview Content */,
 			);
@@ -129,7 +135,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A807073A2704B6F5006C7541 /* Preview Assets.xcassets in Resources */,
+				A8FE54112705FAAE00B0D2BB /* intro.GIF in Resources */,
 				A840CE862705B35300F31464 /* start.txt in Resources */,
+				A8FE540D2705F74E00B0D2BB /* Readme.md in Resources */,
 				A80707372704B6F5006C7541 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
