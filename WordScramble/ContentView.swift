@@ -14,6 +14,7 @@ struct ContentView: View {
     @State private var errorTitle = ""
     @State private var errorMessage = ""
     @State private var showingError = false
+    @State private var score = 0
     
     var body: some View {
         NavigationView {
@@ -22,6 +23,9 @@ struct ContentView: View {
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding()
                     .autocapitalization(.none)
+                
+                Text("Your Score: \(score)")
+                    .font(.title2)
                 
                 List(usedWords, id: \.self) {//used in
 //                    Section (header: Image(systemName: "\(used.count).circle")) {
@@ -119,6 +123,7 @@ struct ContentView: View {
         }
         
         usedWords.insert(answer, at: 0)
+        score += answer.count
         newWord = ""
     }
     
@@ -138,6 +143,7 @@ struct ContentView: View {
     
     func restartGame() {
         startGame()
+        score = 0
         usedWords = [String]()
     }
 }
