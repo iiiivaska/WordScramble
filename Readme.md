@@ -1,1 +1,1 @@
-![till](./WordScramble/intro.gif)
+![till](WordScramble/intro.gif)
