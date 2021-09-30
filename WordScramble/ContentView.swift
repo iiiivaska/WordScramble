@@ -44,6 +44,20 @@ struct ContentView: View {
         showingError = true
     }
     
+    func isRootWord(word: String) -> Bool {
+        if (word == rootWord) {
+            return false
+        }
+        return true
+    }
+    
+    func isLengthEnouth(word: String) -> Bool {
+        if (word.count < 3) {
+            return false
+        }
+        return true
+    }
+    
     func isOriginal(word: String) -> Bool {
         !usedWords.contains(word)
     }
@@ -73,6 +87,16 @@ struct ContentView: View {
         let answer = newWord.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
         
         guard answer.count > 0 else {
+            return
+        }
+        
+        guard isRootWord(word: answer) else {
+            wordError(title: "Word is root", message: "You need to enter another word")
+            return
+        }
+        
+        guard isLengthEnouth(word: answer) else {
+            wordError(title: "Word is too short", message: "Word length less than 3 characters")
             return
         }
         
