@@ -1,1 +1,1 @@
-![till](WordScramble/intro.GIF)
+![till](WordScramble/intro.GIF | width=250)
