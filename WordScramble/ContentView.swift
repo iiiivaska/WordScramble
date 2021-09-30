@@ -33,6 +33,9 @@ struct ContentView: View {
             }
             .navigationTitle(Text(rootWord))
             .onAppear(perform: startGame)
+            .navigationBarItems(leading: Button(action: restartGame) {
+                Text("Restart game")
+            })
             .alert(isPresented: $showingError) {
                 Alert(title: Text(errorTitle), message: Text(errorMessage), dismissButton: .default(Text("OK")))}
         }
@@ -131,6 +134,11 @@ struct ContentView: View {
         }
         
         fatalError("Could not load start.txt from bundle.")
+    }
+    
+    func restartGame() {
+        startGame()
+        usedWords = [String]()
     }
 }
 
